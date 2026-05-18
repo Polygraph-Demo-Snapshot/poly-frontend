@@ -1,32 +1,16 @@
 {
-  "name": "@tusky/shop",
+  "name": "@polydemo/shop",
   "version": "0.0.1",
   "type": "module",
   "private": true,
   "dependencies": {
-    "@tusky/feat-product-detail": "workspace:*",
-    "@tusky/feat-product-list": "workspace:*",
-    "@tusky/feat-create-order": "workspace:*",
-    "@tusky/feat-current-orders": "workspace:*",
-    "@tusky/feat-past-orders": "workspace:*",
-    "@tusky/feat-cancel-order": "workspace:*"
+    "@polydemo/products": "workspace:*"
   },
   "devDependencies": {},
   "nx": {
     "tags": [
       "type:app"
     ],
-    "targets": {
-      "build": {
-        "syncGenerators": [
-          "@tusky/tailwind-sync-plugin:update-tailwind-globs"
-        ]
-      },
-      "dev": {
-        "syncGenerators": [
-          "@tusky/tailwind-sync-plugin:update-tailwind-globs"
-        ]
-      }
-    }
+    "targets": {}
   }
 }

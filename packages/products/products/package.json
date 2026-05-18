@@ -1,8 +1,6 @@
 {
-  "name": "@polydemo/data-access-products",
+  "name": "@polydemo/products",
   "version": "0.0.1",
-  "private": true,
-  "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
@@ -13,10 +11,16 @@
     },
     "./package.json": "./package.json"
   },
+  "dependencies": {
+    "@polydemo/data-access-products": "workspace:*",
+    "@polydemo/tusky-design": "link:../../../../tusky-design/packages/tusky-design",
+    "lucide-react": "^0.555.0",
+    "react-router-dom": "^7.9.6"
+  },
   "nx": {
     "tags": [
       "scope:products",
-      "type:data-access"
+      "type:feature"
     ]
   }
 }

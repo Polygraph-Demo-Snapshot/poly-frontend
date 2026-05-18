@@ -24,7 +24,7 @@ export default defineConfig({
   },
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'pnpm exec nx run @tusky/shop:dev',
+    command: 'pnpm exec nx run @polydemo/shop:dev',
     url: baseURL,
     reuseExistingServer: true,
     cwd: workspaceRoot,

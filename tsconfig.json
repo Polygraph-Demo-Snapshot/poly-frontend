@@ -13,34 +13,7 @@
       "path": "./packages/products/data-access-products"
     },
     {
-      "path": "./packages/products/feat-product-detail"
-    },
-    {
-      "path": "./packages/orders/feat-current-orders"
-    },
-    {
-      "path": "./packages/products/feat-product-list"
-    },
-    {
-      "path": "./packages/products/ui-product-detail"
-    },
-    {
-      "path": "./packages/orders/data-access-order"
-    },
-    {
-      "path": "./packages/orders/feat-cancel-order"
-    },
-    {
-      "path": "./packages/orders/feat-create-order"
-    },
-    {
-      "path": "./packages/orders/feat-past-orders"
-    },
-    {
-      "path": "./packages/orders/ui-order-detail"
-    },
-    {
-      "path": "./tools/tailwind-sync-plugin"
+      "path": "./packages/products/products"
     }
   ]
 }

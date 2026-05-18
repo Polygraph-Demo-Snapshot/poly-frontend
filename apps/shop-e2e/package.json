@@ -1,5 +1,5 @@
 {
-  "name": "@tusky/shop-e2e",
+  "name": "@polydemo/shop-e2e",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
   },
   "nx": {
     "implicitDependencies": [
-      "@tusky/shop"
+      "@polydemo/shop"
     ]
   }
 }

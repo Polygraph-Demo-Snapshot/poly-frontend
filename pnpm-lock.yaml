@@ -7,9 +7,9 @@ settings:
 importers:
   .:
     dependencies:
-      '@juristr/tusky-design':
-        specifier: 1.1.0-beta.3
-        version: 1.1.0-beta.3
+      '@polydemo/tusky-design':
+        specifier: link:../tusky-design/packages/tusky-design
+        version: link:../tusky-design/packages/tusky-design
       '@react-router/node':
         specifier: ^7.2.0
         version: 7.9.6(react-router@7.9.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(typescript@5.9.3)
@@ -173,24 +173,9 @@ importers:
 
   apps/shop:
     dependencies:
-      '@tusky/feat-cancel-order':
+      '@polydemo/products':
         specifier: workspace:*
-        version: link:../../packages/orders/feat-cancel-order
-      '@tusky/feat-create-order':
-        specifier: workspace:*
-        version: link:../../packages/orders/feat-create-order
-      '@tusky/feat-current-orders':
-        specifier: workspace:*
-        version: link:../../packages/orders/feat-current-orders
-      '@tusky/feat-past-orders':
-        specifier: workspace:*
-        version: link:../../packages/orders/feat-past-orders
-      '@tusky/feat-product-detail':
-        specifier: workspace:*
-        version: link:../../packages/products/feat-product-detail
-      '@tusky/feat-product-list':
-        specifier: workspace:*
-        version: link:../../packages/products/feat-product-list
+        version: link:../../packages/products/products
 
   apps/shop-e2e:
     dependencies:
@@ -198,73 +183,20 @@ importers:
         specifier: ^1.6.2
         version: 1.8.3(eslint@9.39.1(jiti@2.6.1))
 
-  packages/orders/data-access-order: {}
-
-  packages/orders/feat-cancel-order:
+  packages/products/products:
     dependencies:
-      '@tusky/data-access-order':
-        specifier: workspace:*
-        version: link:../data-access-order
-      '@tusky/ui-order-detail':
-        specifier: workspace:*
-        version: link:../ui-order-detail
-
-  packages/orders/feat-create-order:
-    dependencies:
-      '@tusky/data-access-order':
-        specifier: workspace:*
-        version: link:../data-access-order
-      '@tusky/ui-order-detail':
-        specifier: workspace:*
-        version: link:../ui-order-detail
-
-  packages/orders/feat-current-orders:
-    dependencies:
-      '@tusky/data-access-order':
-        specifier: workspace:*
-        version: link:../data-access-order
-      '@tusky/ui-order-detail':
-        specifier: workspace:*
-        version: link:../ui-order-detail
-
-  packages/orders/feat-past-orders:
-    dependencies:
-      '@tusky/data-access-order':
-        specifier: workspace:*
-        version: link:../data-access-order
-      '@tusky/ui-order-detail':
-        specifier: workspace:*
-        version: link:../ui-order-detail
-
-  packages/orders/ui-order-detail: {}
-
-  packages/products/data-access-products: {}
-
-  packages/products/feat-product-detail:
-    dependencies:
-      '@tusky/data-access-products':
+      '@polydemo/data-access-products':
         specifier: workspace:*
         version: link:../data-access-products
-      '@tusky/ui-product-detail':
-        specifier: workspace:*
-        version: link:../ui-product-detail
-
-  packages/products/feat-product-list:
-    dependencies:
-      '@tusky/data-access-products':
-        specifier: workspace:*
-        version: link:../data-access-products
-
-  packages/products/ui-product-detail: {}
-
-  tools/tailwind-sync-plugin:
-    dependencies:
-      '@nx/devkit':
-        specifier: 22.1.1
-        version: 22.1.1(nx@22.1.1(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.25)(typescript@5.9.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
-      tslib:
-        specifier: ^2.3.0
-        version: 2.8.1
+      '@polydemo/tusky-design':
+        specifier: link:../../../../tusky-design/packages/tusky-design
+        version: link:../../../../tusky-design/packages/tusky-design
+      lucide-react:
+        specifier: ^0.555.0
+        version: 0.555.0(react@19.0.0)
+      react-router-dom:
+        specifier: ^7.9.6
+        version: 7.9.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
 packages:
   '@babel/code-frame@7.27.1':
@@ -1604,11 +1536,6 @@ packages:
         integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==,
       }
 
-  '@juristr/tusky-design@1.1.0-beta.3':
-    resolution:
-      {
-        integrity: sha512-X3rnx0dCNcDEyqNe92SsJhFAOo46/+bSnGJAwN4qMUWd02SC75cJSgR24MA9cgRsIgrEzqES/xpCsdIeY/XIGQ==,
-      }
 
   '@microsoft/api-extractor-model@7.32.1':
     resolution:
@@ -11316,10 +11243,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@juristr/tusky-design@1.1.0-beta.3':
-    dependencies:
-      clsx: 2.1.1
 
   '@microsoft/api-extractor-model@7.32.1(@types/node@20.19.9)':
     dependencies:

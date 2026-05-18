@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ShopSecure</h3>
+            <h3 className="text-xl font-bold mb-4">PolyShopping</h3>
             <p className="text-gray-400 mb-4">
               Your trusted online shopping destination for all your needs.
               Quality products, secure transactions, fast delivery.
@@ -131,7 +131,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="text-gray-400 mr-2" />
-                <span className="text-gray-400">support@shopsecure.com</span>
+                <span className="text-gray-400">support@polyshopping.dev</span>
               </li>
             </ul>
           </div>
@@ -141,7 +141,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2025 ShopSecure. All rights reserved.
+            © 2026 PolyShopping. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">

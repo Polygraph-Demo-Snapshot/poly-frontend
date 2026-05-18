@@ -1,10 +1,10 @@
-import { ProductGrid } from '@tusky/feat-product-list';
+import { ProductGrid } from '@polydemo/products';
 
 export function HomePage() {
   return (
     <section className="mb-8">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">Legit Products</h2>
+        <h2 className="text-2xl font-bold text-gray-800">Featured Products</h2>
         <div className="flex space-x-2">
           <button className="px-3 py-1 text-sm bg-white border border-gray-300 rounded-md hover:bg-gray-50">
             Latest

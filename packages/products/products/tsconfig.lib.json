@@ -1,21 +1,21 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "out-tsc/shop",
-    "tsBuildInfoFile": "out-tsc/shop/tsconfig.app.tsbuildinfo",
-    "jsx": "react-jsx",
-    "lib": ["dom"],
+    "outDir": "out-tsc/products",
+    "lib": ["es2022", "dom"],
     "types": [
       "node",
       "@nx/react/typings/cssmodule.d.ts",
-      "@nx/react/typings/image.d.ts",
-      "vite/client"
+      "@nx/react/typings/image.d.ts"
     ],
-    "rootDir": "src"
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "tsBuildInfoFile": "out-tsc/products/tsconfig.lib.tsbuildinfo"
   },
   "exclude": [
     "out-tsc",
     "dist",
+    "jest.config.ts",
     "src/**/*.spec.ts",
     "src/**/*.test.ts",
     "src/**/*.spec.tsx",
@@ -32,7 +32,7 @@
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"],
   "references": [
     {
-      "path": "../../packages/products/products/tsconfig.lib.json"
+      "path": "../data-access-products/tsconfig.lib.json"
     }
   ]
 }
